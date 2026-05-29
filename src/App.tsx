@@ -77,7 +77,7 @@ function App() {
         <header className="topbar">
         <div className="brand">
           <img
-            src={`${import.meta.env.BASE_URL}favicon.svg`}
+            src={`${import.meta.env.BASE_URL}images/logo_v1_white.png`}
             alt="Agrupamento de Escolas Josefa de Óbidos"
             className="brand-logo"
           />
