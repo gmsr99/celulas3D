@@ -1,0 +1,105 @@
+:root {
+  /* Premium Dark Microscope Theme */
+  --bg-cream: #0f1115;
+  --bg-paper: #16181d;
+  --bg-card: rgba(22, 24, 29, 0.55);
+  --bg-soft: rgba(22, 24, 29, 0.4);
+  --bg-deep: #0a0b0e;
+
+  --ink-900: #ffffff;
+  --ink-700: #e2e8f0;
+  --ink-500: #94a3b8;
+  --ink-300: #475569;
+
+  /* Neon-ish accents for dark mode contrast */
+  --accent: #a3e635;
+  --accent-deep: #84cc16;
+  --plum: #c084fc;
+  --rose: #fb7185;
+  --amber: #fbbf24;
+  --sky: #38bdf8;
+
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.15);
+  --shadow-soft: 0 8px 32px -4px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 24px 60px -10px rgba(0, 0, 0, 0.6),
+    0 4px 14px -4px rgba(0, 0, 0, 0.3);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, 'Helvetica Neue', Arial, sans-serif;
+  --font-serif: 'Outfit', system-ui, sans-serif;
+  --font-hand: 'Caveat', cursive;
+
+  color-scheme: dark;
+  color: var(--ink-700);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  background:
+    radial-gradient(1200px 600px at 80% -10%, rgba(163, 230, 53, 0.15), transparent 60%),
+    radial-gradient(900px 600px at -10% 100%, rgba(192, 132, 252, 0.12), transparent 60%),
+    radial-gradient(900px 700px at 50% 50%, rgba(15, 17, 21, 0.8), transparent 70%),
+    linear-gradient(180deg, var(--bg-cream) 0%, var(--bg-paper) 100%);
+  color: var(--ink-700);
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  color: var(--ink-900);
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(70, 60, 80, 0.18);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
